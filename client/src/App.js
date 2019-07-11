@@ -15,10 +15,10 @@ class App extends Component {
     this.connectToServer = this.connectToServer.bind(this);
   }
   connectToServer() {
-    fetch("localhost:3001/");
+    //fetch("localhost:3001/");
   }
   componentDidMount() {
-    this.connectToServer();
+    //this.connectToServer();
   }
 
   render() {
