@@ -53,6 +53,7 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/zenninventoryli
 // Send every request to the React app
 // Define any API routes before this runs
 app.get("*", function(req, res) {
+  console.log("HIT IT");
   res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
